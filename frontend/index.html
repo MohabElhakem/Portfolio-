@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mohab Ashraf</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body> 
+
+        <div class="info-box">
+
+                <img src="pictures/IMG_1597.jpg" alt="Profile pictures">
+                <h3>Mohab Ashraf</h3>
+                <h6>WEB DEVELOPMENT</h6>
+                <ul>
+                    <li><a href="https://github.com/MohabElhakem" target="_blank">Git hub </a></li>
+                    <li><a href="http://www.linkedin.com/in/mohab-ashraf-66353136b" target="_blank">linkedin</a></li>
+                    <li>mohabashraf217@gmail.com</li>
+                    <li>01552828530</li>
+                    <li>Egypt</li>
+                </ul>
+                
+
+        </div>
+
+        <!--Put all the things in the grid layout into the container class --> 
+
+        <div class="container">
+ 
+
+            <div class="Profile-box">
+                <h3>Profile Information</h3>
+                <p>Backend-focused junior full-stack developer with a solid foundation in modern web technologies,
+                    including HTML, CSS, Node.js, Express, and MongoDB. 
+                    Developed skills through disciplined self-learning and guidance from industry professionals, 
+                    ensuring practical and industry-aligned experience. Brings strong problem-solving and analytical abilities, 
+                    with a focus on building clean, maintainable, and scalable backend systems. 
+                    Actively seeking a junior MERN role to contribute to real-world projects 
+                    while continuously expanding technical expertise.
+                </p>
+            </div>
+
+            <div class="Education-box">
+                <h3>Education</h3>
+                <h6>Suez Canal University</h6>
+                <p id="ED_P1"> Ismailia — Bachelor of Science in Mechatronics Engineering</p>
+                <p id="ED_P2">July 2020 - July 2024</p>
+                <p id="ED_P3">A bachelor in applied technology mechatronic department in the
+                                Egyptian Chinese College for Applied Technology</p>
+                
+            </div>
+
+            <div class="Skills-box">
+                <h3>Skills</h3>
+                <div class="skills-list">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>React.js</li>
+                    <li>Git</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>JWT</li>
+                    <li>MongoDB</li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="Projects-box">
+                <h3>Projects</h3>
+                <div class="p-section">
+
+                    <h6><a href="https://github.com/MohabElhakem/Auth-API.git" target="_blank">JWT Authentication System (Backend)</a></h6>
+                    <p>A secure backend authentication system built with JavaScript, 
+                        focusing on real-world security and clean architecture. 
+                        The project implements user registration and login using JWT-based authentication, 
+                        password hashing, and protected routes. Special attention was given to proper token handling, 
+                        environment-based configuration, and scalable project structure, 
+                        reflecting industry best practices for building secure APIs.
+                    </p>
+                    <p> Node.js, Express, MongoDB, JWT</p>
+
+
+                    <h6><a href="https://github.com/MohabElhakem/E-Commerce.git" target="_blank">E-Commerce Backend (In Progress)</a></h6>
+                    <p>A scalable e-commerce backend currently under development, 
+                        designed to handle core business logic such as user management, 
+                        product handling, and order workflows. The project emphasizes clean API design, 
+                        database relationships, and extensibility to support future features like payments and inventory management. 
+                        Development follows a structured, modular approach to ensure maintainability and performance.
+                    </p>
+                    <p>Node.js, Express, MongoDB</p>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="final-quote">
+            <h3>"Ready To Work"</h3>
+        </section>
+        <script>
+
+                // Select the quote element
+                const quote = document.querySelector('.final-quote');
+
+                // Listen for scroll events
+                window.addEventListener('scroll', () => {
+
+                    const rect = quote.getBoundingClientRect();
+                    const windowHeight = window.innerHeight;
+
+                    if (rect.top < windowHeight * 0.8 && rect.bottom > 0) {
+                        // In viewport → add class
+                        quote.classList.add('in-view');
+                    } else {
+                        // Out of viewport → remove class
+                        quote.classList.remove('in-view');
+                    }
+                });
+
+        </script>
+    </body>
+
+</html>

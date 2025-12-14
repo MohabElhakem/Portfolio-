@@ -1,0 +1,186 @@
+
+
+.container {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    margin-left: 20%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+
+/* General Styles */
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+}
+h6{    
+    font-size: large;
+    font-family:'Montserrat', sans-serif;
+    margin-bottom: 0%;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
+a{
+    text-decoration: none;
+    color: inherit; 
+}
+a:hover{
+    color: rgb(138, 138, 138);
+}   
+
+
+
+
+/* Info Box Styles */
+.info-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:20%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+}
+.info-box img{
+    width: 100%;
+    height: auto;
+    margin-bottom:0%;
+
+}
+.info-box h3{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2px;
+    margin-top: 5px;
+ }
+.info-box h6 {
+    margin-top: 0%;
+    font-size: smaller;
+    font-family:'Montserrat', sans-serif ;
+}
+.info-box ul{
+    position: absolute;
+    margin-top: 20%;
+    list-style:none;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    bottom: 10px;
+    
+}
+.info-box a{
+    text-decoration: none;
+    color: inherit; 
+}
+.info-box a:hover{
+    color: rgb(138, 138, 138);
+}
+
+
+/* Profile Card Styles */
+.Profile-box{
+    grid-column: 1/3;
+    padding: 2%;
+    border: 2px solid rgb(138, 138, 138);
+    
+}
+.Profile-box h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    margin-top: 2px;
+}
+.Profile-box p{
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    color:solid rgb(138, 138, 138);
+}
+
+/* Education Box Styles */
+.Education-box {
+    grid-column: 1/2;
+    padding: 2%;
+    border: 2px solid rgb(138, 138, 138);
+
+}
+.Education-box h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    margin-top:2px ;
+    margin-bottom: 2px;
+}
+.Education-box h6{
+    font-family:  'Roboto', sans-serif;
+    font-size:large ;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.Education-box p{
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    color: solid rgb(138, 138, 138);
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+/* Skills Box Styles */
+.Skills-box{
+
+    grid-row: 2/4;
+    grid-column: 2/3;
+    border: 2px solid rgb(138, 138, 138);
+    display: flex;
+    flex-direction: column;
+
+}
+.Skills-box h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    margin: 10%;
+    
+}
+.Skills-box ul{
+    
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 90%;
+    font-size: medium;
+
+}
+.skills-list{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Projects Box Styles */
+.Projects-box{
+    grid-column: 1/2;
+    padding: 2%;
+    border: 2px solid rgb(138, 138, 138);
+}
+.Projects-box h3{
+    margin-top:2px ;
+    margin-bottom: 2px;
+}
+
+/* Final Quote Styles */
+.final-quote{
+    margin-left:20% ;
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 4rem;
+    color: rgba(35, 35, 35, 0.307);
+    transition: color 1.5s ease , transform 5s ease;
+    transform: scale(0.80);
+}
+.final-quote.in-view{
+    color: rgb(0, 0, 0);
+    transform: scale(1);
+}
