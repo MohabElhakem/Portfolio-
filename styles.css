@@ -184,3 +184,74 @@ a:hover{
     color: rgb(0, 0, 0);
     transform: scale(1);
 }
+
+/*---------------- Mobile & Tablet Responsive ----------------*/
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0;
+        padding: 30px;
+    }
+    .info-box {
+        width: 25%;
+    }
+    .final-quote {
+        margin-left: 0;
+        font-size: 3rem;
+    }
+}
+
+/* Mobile Phones (max-width: 767px) */
+@media (max-width: 767px) {
+
+    /* Info box moves on top */
+    .info-box {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .info-box ul {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 5px;
+        bottom: auto;
+    }
+
+    /* Container stacks vertically */
+    .container {
+        display: block;
+        margin-left: 0;
+        padding: 20px;
+    }
+    .Profile-box,
+    .Education-box,
+    .Skills-box,
+    .Projects-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Font sizes for small screens */
+    h3 {
+        font-size: 1.5rem;
+    }
+    h6 {
+        font-size: 0.9rem;
+    }
+    p {
+        font-size: 0.85rem;
+    }
+
+    /* Final quote adjustments */
+    .final-quote {
+        margin-left: 0;
+        font-size: 2.5rem;
+        padding: 50px 10px;
+    }
+}
