@@ -192,10 +192,13 @@ a:hover{
     .container {
         grid-template-columns: 1fr 1fr;
         margin-left: 0;
+        margin-bottom: 0%;
+        bottom: 0%;
         padding: 30px;
     }
     .info-box {
         width: 25%;
+        bottom: 0px;
     }
     .final-quote {
         margin-left: 0;
@@ -208,6 +211,10 @@ a:hover{
 
     /* Info box moves on top */
     .info-box {
+        top : 0px;
+        left: 0px;
+        margin-left: 0%;
+        margin-top: 0%;
         position: relative;
         width: 100%;
         height: auto;
